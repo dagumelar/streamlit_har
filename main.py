@@ -7,9 +7,18 @@ from sklearn.ensemble import RandomForestClassifier
 
 # Function -------------------------------------------------------------------------
 def loadData():
-    DATA_URL = ('kuhar_1-4000.csv')
-    data = data = pd.read_csv(DATA_URL, header=None)
-    return data
+    data1 = pd.read_csv('kuhar_1-4000.csv', header=None)
+    data2 = pd.read_csv('kuhar_4001-8000.csv', header=None)
+    data3 = pd.read_csv('kuhar_8001-12000.csv', header=None)
+    data4 = pd.read_csv('kuhar_12001-16000.csv', header=None)
+    data5 = pd.read_csv('kuhar_16001-20750.csv', header=None)
+    
+    data1.append(data2, ignore_index=True)
+    data1.append(data3, ignore_index=True)
+    data1.append(data4, ignore_index=True)
+    data1.append(data5, ignore_index=True)
+    
+    return data1
 
 def loadDataInfo():
     data = {'Aktivitas': ['Stand','Sit','Talk-sit','Talk-stand','Stand-sit','Lay','Lay-stand','Pick','Jump','Push-up','Sit-up','Walk','Walk-backward','Walk-circle','Run','Stair-up','Stair-down','Table-tennis'],

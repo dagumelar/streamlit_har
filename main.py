@@ -17,7 +17,7 @@ def loadData():
     data1 = data1.append(data2[0:4000], ignore_index=True)
     data1 = data1.append(data3[0:4000], ignore_index=True)
     data1 = data1.append(data4[0:4000], ignore_index=True)
-    data1 = data1.append(data5[0:4000], ignore_index=True)
+    data1 = data1.append(data5[0:4750], ignore_index=True)
     
     return data1
 

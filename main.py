@@ -13,10 +13,10 @@ def loadData():
     data4 = pd.read_csv('kuhar_12001-16000.csv', header=None)
     data5 = pd.read_csv('kuhar_16001-20750.csv', header=None)
     
-#     data1 = data1.append(data2, ignore_index=True)
-#     data1 = data1.append(data3, ignore_index=True)
-#     data1 = data1.append(data4, ignore_index=True)
-#     data1 = data1.append(data5, ignore_index=True)
+    data1 = data1.append(data2, ignore_index=True)
+    data1 = data1.append(data3, ignore_index=True)
+    data1 = data1.append(data4, ignore_index=True)
+    data1 = data1.append(data5, ignore_index=True)
     
     return data1
 

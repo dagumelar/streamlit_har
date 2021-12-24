@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # Function -------------------------------------------------------------------------
 def loadData():
-    DATA_URL = ('kuhar_4000.csv')
+    DATA_URL = ('kuhar_1-4000.csv')
     data = data = pd.read_csv(DATA_URL, header=None)
     return data
 

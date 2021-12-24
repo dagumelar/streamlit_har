@@ -61,7 +61,7 @@ def eda():
     # Grafik
     st.subheader('Grafik Aktivitas')
     number2 = st.number_input('Masukkan index data', step=1, min_value=0, max_value=20749, key=2)
-    st.write('Menampilkan grafik data kelas ', data_info['Aktivitas'][number2])
+    st.write('Menampilkan grafik data kelas ', data_info['Aktivitas'][int(labels[number2])])
     acc_x = pd.DataFrame(signals[number2, 0: 300])
     acc_y = pd.DataFrame(signals[number2, 300: 600])
     acc_z = pd.DataFrame(signals[number2, 600: 900])
